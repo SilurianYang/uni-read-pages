@@ -1,0 +1,25 @@
+{
+  "name": "uni-read-pages",
+  "version": "1.0.1",
+  "description": "read `pages.json` file to generate the routes table",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch  --progress --config webpack/webpack.dev.js",
+    "build": "webpack --progress --config webpack/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilurianYang/uni-read-pages.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilurianYang/uni-read-pages/issues"
+  },
+  "homepage": "https://github.com/SilurianYang/uni-read-pages#readme"
+}
