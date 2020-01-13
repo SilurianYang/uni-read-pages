@@ -1,7 +1,7 @@
 const path = require('path')
 const CONFIG={
 	cli:false,
-	includes:['path','name']	
+	includes:['path','aliasPath','name']	
 }
 const rootPath={
 	true:'',
@@ -39,10 +39,12 @@ class TransformPages {
 			for(let j=0;j<this.CONFIG.includes.length;j++){
 				const key =this.CONFIG.includes[j];
 				let value=item[key];
-				if(key=='path'){
+				if(key==='path'){
 					value=`/${value}`
 				}
-				if(value!==undefined){
+				if(key==='aliasPath'&&i==0){
+					route[key]=route[key]||'/'
+				}else if(value!==undefined){
 					route[key]=value;
 				}
 			}

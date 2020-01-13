@@ -1,6 +1,6 @@
 {
   "name": "uni-read-pages",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "read `pages.json` file to generate the routes table",
   "main": "index.js",
   "directories": {
@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "echo \n\n uni-simple-router 垫脚片，欢迎下载！\n \n 开源不易，需要鼓励。去给 uni-read-pages 项目 点个 star 吧 \n\n 记得看文档 脚手架和 HBuilder 初始化的项目配置不同!",
     "dev": "webpack --watch  --progress --config webpack/webpack.dev.js",
     "build": "webpack --progress --config webpack/webpack.prod.js"
   },
