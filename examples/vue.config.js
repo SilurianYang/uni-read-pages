@@ -1,4 +1,4 @@
-const TransformPages = require('./common/uni-pages-routes-bundle')
+const TransformPages = require('./common/uni-read-pages-bundle')
 const tfPages = new TransformPages()
 module.exports = {
 	configureWebpack: {
