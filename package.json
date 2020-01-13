@@ -1,5 +1,5 @@
 {
-  "name": "uni-pages-routes",
+  "name": "uni-read-pages",
   "version": "1.0.0",
   "description": "read `pages.json` file to generate the routes table",
   "main": "index.js",
@@ -26,13 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SilurianYang/uni-pages-routes.git"
+    "url": "git+https://github.com/SilurianYang/uni-read-pages.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SilurianYang/uni-pages-routes/issues"
+    "url": "https://github.com/SilurianYang/uni-read-pages/issues"
   },
-  "homepage": "https://github.com/SilurianYang/uni-pages-routes#readme"
+  "homepage": "https://github.com/SilurianYang/uni-read-pages#readme"
 }
