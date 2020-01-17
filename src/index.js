@@ -31,7 +31,17 @@ class TransformPages {
 	 * 通过读取pages.json文件 生成直接可用的routes
 	 */
 	getPagesRoutes(){
-		const {pages}=this.pagesJson;
+		const {pages,subPackages}=this.pagesJson;
+		let [pagesRoutes,subRoutes]=[[],[]];
+		pagesRoutes=this.jsonToRoutes(pages);	//获取pages.json节点下的配置
+		// subRoutes=this.parsePages((t1)=>{
+		// 	console.log(t1)
+		// },(t2)=>{
+		// 	console.log(t2)
+		// });
+		return pagesRoutes.concat(subRoutes);
+	}
+	jsonToRoutes(pages){
 		const routes=[];
 		for(let i=0;i<pages.length;i++){
 			const item=pages[i];
@@ -50,7 +60,7 @@ class TransformPages {
 			}
 			routes.push(route);
 		}
-		return routes;
+		return routes
 	}
 	/**
 	 * 单条page对象解析
