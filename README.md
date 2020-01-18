@@ -59,7 +59,6 @@ export default {
 ```js
 //默认值
 const CONFIG={
-    cli:false,      //当前是否为脚手架初始化的项目
     includes:['path','aliasPath','name']	    //需要获取包涵的字段
 }
 ```
